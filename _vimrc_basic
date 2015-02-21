@@ -1,0 +1,46 @@
+"----------------------------------------------
+"  基本設定
+"----------------------------------------------
+syntax on
+set nobackup             " バックアップ取らない  
+set noswapfile           " スワップファイル作らない
+set autoread             " 他で書き換えられた自動で読み直す
+set incsearch            " インクリメントサーチ
+set wrapscan             " 最後まで検索したら先頭に戻る
+set clipboard+=unnamed   " OSのクリップボードを使用
+set clipboard=unnamed    " ヤンクした文字は、システムのクリップボードへ
+set tabstop=4             "タブ表示幅
+set shiftwidth=4          "タブ挿入幅
+set history=200          " 履歴数
+
+"----------------------------------------------
+"   表示
+"----------------------------------------------
+"let g:hybrid_use_Xresources = 1
+colorscheme hybrid    " カラーテーマ
+set shortmess+=I      " 起動時のスプラッシュ表示しない
+set number            " 行番号表示
+set showmatch         " 括弧の対応をハイライト
+set list              " 不可視文字表示
+set listchars=tab:^\  
+set shellslash        " Winでパス区切りに/を使えるように
+
+
+"----------------------------------------------
+"   キーマップ
+"----------------------------------------------
+
+nmap <ESC><ESC> :nohlsearch<CR><ESC>
+
+"----------------------------------------------
+"   UNITE キーマップ
+"----------------------------------------------
+
+nnoremap <silent> <C-r> :<C-u>Unite file_mru<CR>
+nnoremap <silent> <C-n> :<C-u>Unite buffer<CR>
+
+
+
+
+" for proxy
+let g:neobundle#types#git#default_protocol='https'

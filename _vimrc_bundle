@@ -1,0 +1,20 @@
+if !1 | finish | endif
+
+if has('vim_starting')
+  if &compatible
+    set nocompatible
+  endif
+  set runtimepath+=$HOME/.vim/bundle/neobundle.vim
+endif
+
+call neobundle#rc(expand('$HOME/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" ここにインストールしたいプラグインのリストを書く
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'vim-scripts/Wombat'    " カラースキーマ
+NeoBundle 'w0ng/vim-hybrid'       " カラースキーマ
+
+
+filetype plugin indent on
+
