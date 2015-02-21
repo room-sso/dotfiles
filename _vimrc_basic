@@ -1,39 +1,39 @@
 "----------------------------------------------
-"  Šî–{İ’è
+"  åŸºæœ¬è¨­å®š
 "----------------------------------------------
 syntax on
-set nobackup             " ƒoƒbƒNƒAƒbƒvæ‚ç‚È‚¢  
-set noswapfile           " ƒXƒƒbƒvƒtƒ@ƒCƒ‹ì‚ç‚È‚¢
-set autoread             " ‘¼‚Å‘‚«Š·‚¦‚ç‚ê‚½©“®‚Å“Ç‚İ’¼‚·
-set incsearch            " ƒCƒ“ƒNƒŠƒƒ“ƒgƒT[ƒ`
-set wrapscan             " ÅŒã‚Ü‚ÅŒŸõ‚µ‚½‚çæ“ª‚É–ß‚é
-set clipboard+=unnamed   " OS‚ÌƒNƒŠƒbƒvƒ{[ƒh‚ğg—p
-set clipboard=unnamed    " ƒ„ƒ“ƒN‚µ‚½•¶š‚ÍAƒVƒXƒeƒ€‚ÌƒNƒŠƒbƒvƒ{[ƒh‚Ö
-set tabstop=4             "ƒ^ƒu•\¦•
-set shiftwidth=4          "ƒ^ƒu‘}“ü•
-set history=200          " —š—ğ”
+set nobackup             " ãƒãƒƒã‚¯ã‚¢ãƒƒãƒ—å–ã‚‰ãªã„  
+set noswapfile           " ã‚¹ãƒ¯ãƒƒãƒ—ãƒ•ã‚¡ã‚¤ãƒ«ä½œã‚‰ãªã„
+set autoread             " ä»–ã§æ›¸ãæ›ãˆã‚‰ã‚ŒãŸè‡ªå‹•ã§èª­ã¿ç›´ã™
+set incsearch            " ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã‚µãƒ¼ãƒ
+set wrapscan             " æœ€å¾Œã¾ã§æ¤œç´¢ã—ãŸã‚‰å…ˆé ­ã«æˆ»ã‚‹
+set clipboard+=unnamed   " OSã®ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã‚’ä½¿ç”¨
+set clipboard=unnamed    " ãƒ¤ãƒ³ã‚¯ã—ãŸæ–‡å­—ã¯ã€ã‚·ã‚¹ãƒ†ãƒ ã®ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã¸
+set tabstop=4             "ã‚¿ãƒ–è¡¨ç¤ºå¹…
+set shiftwidth=4          "ã‚¿ãƒ–æŒ¿å…¥å¹…
+set history=200          " å±¥æ­´æ•°
 
 "----------------------------------------------
-"   •\¦
+"   è¡¨ç¤º
 "----------------------------------------------
 "let g:hybrid_use_Xresources = 1
-colorscheme hybrid    " ƒJƒ‰[ƒe[ƒ}
-set shortmess+=I      " ‹N“®‚ÌƒXƒvƒ‰ƒbƒVƒ…•\¦‚µ‚È‚¢
-set number            " s”Ô†•\¦
-set showmatch         " Š‡ŒÊ‚Ì‘Î‰‚ğƒnƒCƒ‰ƒCƒg
-set list              " •s‰Â‹•¶š•\¦
+colorscheme hybrid    " ã‚«ãƒ©ãƒ¼ãƒ†ãƒ¼ãƒ
+set shortmess+=I      " èµ·å‹•æ™‚ã®ã‚¹ãƒ—ãƒ©ãƒƒã‚·ãƒ¥è¡¨ç¤ºã—ãªã„
+set number            " è¡Œç•ªå·è¡¨ç¤º
+set showmatch         " æ‹¬å¼§ã®å¯¾å¿œã‚’ãƒã‚¤ãƒ©ã‚¤ãƒˆ
+set list              " ä¸å¯è¦–æ–‡å­—è¡¨ç¤º
 set listchars=tab:^\  
-set shellslash        " Win‚ÅƒpƒX‹æØ‚è‚É/‚ğg‚¦‚é‚æ‚¤‚É
+set shellslash        " Winã§ãƒ‘ã‚¹åŒºåˆ‡ã‚Šã«/ã‚’ä½¿ãˆã‚‹ã‚ˆã†ã«
 
 
 "----------------------------------------------
-"   ƒL[ƒ}ƒbƒv
+"   ã‚­ãƒ¼ãƒãƒƒãƒ—
 "----------------------------------------------
 
 nmap <ESC><ESC> :nohlsearch<CR><ESC>
 
 "----------------------------------------------
-"   UNITE ƒL[ƒ}ƒbƒv
+"   UNITE ã‚­ãƒ¼ãƒãƒƒãƒ—
 "----------------------------------------------
 
 nnoremap <silent> <C-r> :<C-u>Unite file_mru<CR>
