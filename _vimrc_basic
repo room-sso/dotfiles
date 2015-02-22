@@ -17,7 +17,7 @@ set history=200          " 履歴数
 "   表示
 "----------------------------------------------
 "let g:hybrid_use_Xresources = 1
-colorscheme hybrid    " カラーテーマ
+"colorscheme vim-hybrid    " カラーテーマ
 set shortmess+=I      " 起動時のスプラッシュ表示しない
 set number            " 行番号表示
 set showmatch         " 括弧の対応をハイライト
