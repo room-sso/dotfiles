@@ -24,7 +24,8 @@ set showmatch         " 括弧の対応をハイライト
 set list              " 不可視文字表示
 set listchars=tab:^\  
 set shellslash        " Winでパス区切りに/を使えるように
-
+" set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
+set laststatus=2      " 末尾から2行目にステータスラインを常に表示
 
 "----------------------------------------------
 "   キーマップ
