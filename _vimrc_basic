@@ -12,12 +12,15 @@ set clipboard=unnamed    " ヤンクした文字は、システムのクリッ�
 set tabstop=4             "タブ表示幅
 set shiftwidth=4          "タブ挿入幅
 set history=200          " 履歴数
+" set encoding=utf-8       " 文字コード
+set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+" set fileformats=unix,dos,mac
 
 "----------------------------------------------
 "   表示
 "----------------------------------------------
-"let g:hybrid_use_Xresources = 1
-"colorscheme vim-hybrid    " カラーテーマ
+let g:hybrid_use_Xresources = 1
+" colorscheme hybrid    " カラーテーマ
 set shortmess+=I      " 起動時のスプラッシュ表示しない
 set number            " 行番号表示
 set showmatch         " 括弧の対応をハイライト
@@ -26,6 +29,7 @@ set listchars=tab:^\
 set shellslash        " Winでパス区切りに/を使えるように
 " set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 set laststatus=2      " 末尾から2行目にステータスラインを常に表示
+
 
 "----------------------------------------------
 "   キーマップ
@@ -40,8 +44,13 @@ nmap <ESC><ESC> :nohlsearch<CR><ESC>
 nnoremap <silent> <C-r> :<C-u>Unite file_mru<CR>
 nnoremap <silent> <C-n> :<C-u>Unite buffer<CR>
 
-
-
-
 " for proxy
 let g:neobundle#types#git#default_protocol='https'
+
+"----------------------------------------------
+"  emmet
+"----------------------------------------------
+source $HOME/.vim/bundle/webapi-vim/autoload/webapi/json.vim
+let g:user_emmet_leader_key='<c-e>'
+let g:user_emmet_settings=webapi#json#decode(join(readfile(expand('$HOME/dotfiles/_snippets_custom.json')), "\n"))
+
